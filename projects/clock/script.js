@@ -60,9 +60,12 @@ function updateDisplay(){
    document.getElementById('milliseconds').innerText = String(Math.floor(stopwatch.milliseconds / 10)).padStart(2,'0');
 }
 
+//Selecting the buttons
 const start = document.getElementById('start-btn');
-start.addEventListener('click',startTimer);
 const stop = document.getElementById('stop-btn');
-stop.addEventListener('click',stopTimer);
 const reset  = document.getElementById('reset-btn');
+
+//Binding functions to the buttons
+start.addEventListener('click',startTimer);
+stop.addEventListener('click',stopTimer);
 reset.addEventListener('click',resetTimer);
