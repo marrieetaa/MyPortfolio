@@ -54,11 +54,24 @@ const stopwatch = {
 }
 
 //Selecting the buttons
-const start = document.getElementById('stopwatch-start-btn');
-const stop = document.getElementById('stopwatch-stop-btn');
-const reset  = document.getElementById('stopwatch-reset-btn');
+const stopwatchStartBtn = document.getElementById('stopwatch-start-btn');
+const stopwatchStopBtn = document.getElementById('stopwatch-stop-btn');
+const stopwatchResetBtn  = document.getElementById('stopwatch-reset-btn');
 
 //Binding functions to the buttons
-start.addEventListener('click',() => stopwatch.startTimer());
-stop.addEventListener('click',() => stopwatch.stopTimer());
-reset.addEventListener('click',() => stopwatch.resetTimer());
+stopwatchStartBtn.addEventListener('click',() => stopwatch.startTimer());
+stopwatchStopBtn.addEventListener('click',() => stopwatch.stopTimer());
+stopwatchResetBtn.addEventListener('click',() => stopwatch.resetTimer());
+
+
+//--Timer--
+//
+const timerStartBtn = document.getElementById('timer-start-btn');
+const timerStopBtn = document.getElementById('timer-stop-btn');
+const timerResetBtn = document.getElementById('timer-reset-btn');
+//
+const hourInput = document.getElementById('timer-hours');
+const minutesInput = document.getElementById('timer-minutes');
+const secondsInput = document.getElementById('timer-seconds');
+
+
