@@ -36,6 +36,17 @@ function stopTimer() {
     clearInterval(timer);
 }
 
+//Reset timer
+function resetTimer() {
+   running = false;
+   clearInterval(timer);
+   hours = 0;
+   minutes = 0;
+   seconds = 0; 
+   milliseconds = 0;
+   updateDisplay();
+}
+
 function updateDisplay(){
    document.getElementById('hours').innerText = String(hours).padStart(2,'0'); //00 format
    document.getElementById('minutes').innerText = String(minutes).padStart(2,'0');
@@ -47,3 +58,5 @@ const start = document.getElementById('start-btn');
 start.addEventListener('click',startTimer);
 const stop = document.getElementById('stop-btn');
 stop.addEventListener('click',stopTimer);
+const reset  = document.getElementById('reset-btn');
+reset.addEventListener('click',resetTimer);
