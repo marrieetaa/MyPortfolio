@@ -43,10 +43,10 @@ const stopwatch = {
         this.updateDisplay();
     },
     updateDisplay() {
-      document.getElementById('hours').innerText = this.formatTime(this.hours);
-      document.getElementById('minutes').innerText = this.formatTime(this.minutes);
-      document.getElementById('seconds').innerText = this.formatTime(this.seconds);
-      document.getElementById('milliseconds').innerText = this.formatTime(Math.floor(this.milliseconds / 10));
+      document.getElementById('stopwatch-hours').innerText = this.formatTime(this.hours);
+      document.getElementById('stopwatch-minutes').innerText = this.formatTime(this.minutes);
+      document.getElementById('stopwatch-seconds').innerText = this.formatTime(this.seconds);
+      document.getElementById('stopwatch-milliseconds').innerText = this.formatTime(Math.floor(this.milliseconds / 10));
     },
     formatTime(time) {
         return String(time).padStart(2,'0'); 
