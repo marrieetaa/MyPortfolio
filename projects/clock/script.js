@@ -54,9 +54,9 @@ const stopwatch = {
 }
 
 //Selecting the buttons
-const start = document.getElementById('start-btn');
-const stop = document.getElementById('stop-btn');
-const reset  = document.getElementById('reset-btn');
+const start = document.getElementById('stopwatch-start-btn');
+const stop = document.getElementById('stopwatch-stop-btn');
+const reset  = document.getElementById('stopwatch-reset-btn');
 
 //Binding functions to the buttons
 start.addEventListener('click',() => stopwatch.startTimer());
